@@ -13,12 +13,12 @@ Le but de ce projet est de faciliter l'utilisation de l'écriture inclusive.
 ## Présentation
 Ce projet permet d'effectuer des suggestions afin d'adapter votre texte à l'écriture inclusive.
 
-todo : gif
+![demo_gif](https://github.com/NathanMeulle/EcritureInclusive/blob/master/demo.gif)
 
 #### exemple : 
 Le journaliste interroge un intervenant informaticien.
 
-&rightarrow;La·le journaliste interroge un intervenant·e informaticien·ne.
+&rightarrow;La·le journaliste interroge un·e intervenant·e informaticien·ne.
 
 ## Membres
 - [Nathan Meulle](https://github.com/NathanMeulle)
@@ -49,7 +49,7 @@ NB : le code fournit des suggestions. Des erreurs peuvent subsiter... les passag
 ### Ajout d'un mot manquant au dictionnaire
 Si l'écriture inclusive n'est pas proposée sur un mot, il se peut que celui-ci ne soit pas répertorié dans le dictionnaire.
 
-Vous pouvez l'ajouter en modifiant le fichier dico_nom de Dictionnaire.py #todo : lien, en repectant le format suivant : ["nom\_masculin", "nom\_féminin"] exemple : ["poissonier", "poissonière"]
+Vous pouvez l'ajouter en modifiant le fichier dico_nom de [Dictionnaire.py](https://github.com/NathanMeulle/EcritureInclusive/blob/master/Dictionnaire.py), en repectant le format suivant : ["nom\_masculin", "nom\_féminin"] exemple : ["poissonier", "poissonière"]
 
 ### Autres améliorations... ?
 Contactez-moi !
@@ -62,4 +62,4 @@ Contactez-moi !
 
 - [www.motscles.net/ecriture-inclusive](https://www.motscles.net/ecriture-inclusive)
 
-- [Femme,j’écris ton nom..., guide d’aide à la féminisation des noms de métiers, titres, grades et fonctions, 1999, sous la direction de Bernard CERQUIGLINI](https://www.vie-publique.fr/sites/default/files/rapport/pdf/994001174.pdf)
+- [Femme, j’écris ton nom..., guide d’aide à la féminisation des noms de métiers, titres, grades et fonctions, 1999, sous la direction de Bernard CERQUIGLINI](https://www.vie-publique.fr/sites/default/files/rapport/pdf/994001174.pdf)
