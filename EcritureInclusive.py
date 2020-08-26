@@ -16,7 +16,8 @@ import os # pour afficher le répertoire courant où est enregistré le fichier
 
 ## INITIALISATION (MODIFIABLE)
 GRAS =  True
-SORTIE_TERMINAL = True # True : sortie sur le terminal, False : crée une fichier .txt
+SORTIE_TERMINAL = False # True : sortie sur le terminal, False : crée une fichier .txt
+ENTREE_TERMINAL = False # True : saisie sur le terminal, False : ouvre le fichier .txt dans le meme repertoire
 
 
 ## Affichage - Style
@@ -204,7 +205,15 @@ def load_dico():
 
 ## Affichage
 
-text = str(input("Entrez votre texte :\n"))
+if ENTREE_TERMINAL:
+    text = str(input("Entrez votre texte :\n"))
+else :
+    try:
+        with open(str(input("Entrez le nom du fichier (ex: mon_texte.txt) :\n")), "r") as fichier:
+            text = fichier.read()
+    except FileNotFoundError:
+        text = "Une erreur est survenue, fichier non trouvé..."
+
 text_list = text.split()
 correction(text_list)
 
